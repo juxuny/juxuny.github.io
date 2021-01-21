@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!-- TODO 兼容IE浏览器 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- TODO 兼容高速浏览模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- TODO 移动设计优先(响应式) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>潮起宝安湾</title>
+    <!-- TODO Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+             -webkit-text-size-adjust: none !important;
+        }
+        .container{
+        	padding-left:0;
+            padding-right:0; 
+            overflow:hidden;
+            position:relative;
+        }
+        
+        .c1{
+        	position:absolute;
+            top:3%;
+            left:66%;
+
+            
+        }
+        .c2{
+        	position:absolute;
+            top:11%;
+            left:31%;
+
+
+        }
+        .c3{
+        	position:absolute;
+            top:26%;
+            left:27%;
+ 		
+  
+        }
+         .c4{
+        	position:absolute;
+            top:43%;
+            left:41%;
+       
+        }
+        .c5{
+        	position:absolute;
+            top:26%;
+            left:59%;
+         
+        }
+         .c6{
+        	position:absolute;
+            top:56%;
+            left:42%;
+
+        }
+        .c7{
+        	position:absolute;
+            top:62%;
+            left:17%;
+
+        }
+        .c8{
+        	position:absolute;
+            top:79%;
+            left:45%;
+
+        }
+        .c9{
+        	position:absolute;
+            top:88%;
+            left:54%;
+        }
+        .c10{
+        	position:absolute;
+            top:88%;
+            left:20%;
+
+        }
+        .modal3{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(56,141,138, 1);
+            z-index: 999;
+            text-align:center;
+            padding-top:50%;
+		}
+        @keyframes scroll{
+            0%{
+                transform:scale(1);
+            }
+            100%{
+                transform:scale(1.1);
+            }
+        }
+        @-webkit-keyframes scroll{
+            0%{
+                transform:scale(1);
+            }
+            100%{
+                transform:scale(1.1);
+            }
+        }
+        a img {
+            animation-name:scroll;
+            animation-duration:1s;
+            animation-timing-function:linear;
+            /*Chrome & Safari*/
+            -webkit-animation-name:scroll;
+            -webkit-animation-duration:1s;
+            -webkit-animation-timing-function:linear;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-direction:alternate;
+        }
+
+
+        .overlay-landscape.active {
+              opacity: 0.85;
+              background-color: rgba(0,0,0,1);
+              z-index: 9000;
+              display: block;
+              position: fixed;
+            }
+
+		.overlay-landscape-modal {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              opacity: 0;
+              z-index: -1;
+			}
+        .modal-dialog{
+        	display:none;
+        }
+        .gu{
+            position: fixed;
+            top: 28%;
+            left:60%;
+            z-index: 99;
+            transform:rotate(90deg);
+        }
+        .gu span{
+            color:#910F0F;
+            font-size: 20px;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+	
+    
+<body>
+    <div class="modal-dialog overlay-landscape-modal-mobile" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">请锁定您的屏幕为竖屏</h4>
+        </div>
+        <div class="modal-body">
+            <p class="">
+                为确保功能正常，且让你有最好的体验效果，请锁定您的屏幕为竖屏，谢谢！
+            </p >
+        </div>
+    </div>
+</div>
+<div class="overlay-landscape"></div>
+    <div class='modal3'>
+    	<!--<span class='q1'></span><br><br>
+        <span class='q2'></span><br><br>
+        <span class='q3'></span><br><br>
+        <span class='q4'></span><br><br>
+        <span class='q5'></span>-->
+        <img src='img/timg1.gif'width='100%'/>
+    </div>
+    <audio id="video1" controls="controls" autoplay="autoplay" hidden="hidden" preload="auto" src="13.mp3" loop="loop"></audio>
+    <div class="gu">
+        <span>
+            点击头像查看视频
+        </span>
+    </div>
+<div class='container'>
+   <img class="i1" src='img/first333.png' width="100%"/>
+    <a href="https://dv.sznews.com/live_upload/custom/20210117/f4c78e87-470f-4357-b86e-642b39f8869c.mp4"><img class='c1' src="img/ff1.png" width="25%"/></a>
+    <a href="https://dv.sznews.com/live_upload/custom/20210117/7546b572-fd10-4cd7-8ff5-881c0de84342.mp4"><img class='c2' src="img/ff2.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210118/eb804e20-1595-454c-b6ec-fd71915405e9_material_original.mp4'><img class='c3' src="img/ff3.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210117/5cbedf94-8f77-400d-a6f4-8631cf3120e1.mp4'><img class='c4'src="img/ff4.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210117/0bb9cefd-8015-4c99-9fb3-b4234ab100c7.mp4'><img class='c5'src="img/ff5.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210117/c5b6e671-5124-44e4-9927-e4cd75050af9.mp4'><img class='c6' src="img/ff6.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210117/625e99e2-cce3-487d-bc93-d133d59e69ae.mp4'><img class='c7'src="img/ff7.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210117/649e2117-2f69-41cb-902e-883cee156b9c.mp4'><img class='c8'src="img/ff8.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210117/6a4f236f-898b-45a2-928a-f33859c6e4af.mp4'><img class='c9'src="img/ff9.png" width="25%"/></a>
+    <a href='https://dv.sznews.com/live_upload/custom/20210117/85ce6dc5-4abf-40e8-aca1-9b98bf7ae0f0.mp4'><img class='c10'src="img/ff10.png" width="25%"/></a>
+</div>
+<!-- TODO 基于 jQuery 实现的 --> 
+<script src="bootstrap/js/jquery-1.11.3.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- TODO Bootstrap的插件文件 -->
+<script>
+    window.onload=function(){
+    	$(".modal3").css("display","none");
+    };
+    
+    $(window).on("deviceorientation resize", function( event ) {
+    if (window.matchMedia("(orientation: portrait)").matches) {
+
+    }
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        $(".modal-dialog").css('display',"block");
+    }
+});
+    
+    var box = document.querySelector('.container');
+    box.addEventListener('touchmove',function(e){
+            $(".a12").fadeOut();
+        });
+    
+  /* $(function(){
+ 
+        $('html,body').animate({scrollTop:8000},80000,"linear");
+ 
+})*/
+
+    window.onscroll=function(){
+            var windowHeight=window.screen.height;//屏幕的高
+    //console.log(windowHeight);
+var bodyHeight=document.getElementsByTagName("body")[0].offsetHeight-windowHeight;//获取body的高度，这里需要减掉的屏幕的高
+    //console.log(bodyHeight);
+var scroll=document.getElementsByClassName("scroll")[0];//获取滚动条
+	//console.log(scroll);
+        
+        
+        
+  //获取网页被卷去的高度
+	var scrollTop= document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; 
+    //console.log(scrollTop);
+    var h=(scrollTop/bodyHeight*100).toFixed(2);
+        console.log(h);
+        console.log(window.screen.height);
+
+        
+       /* if(h>=0&&h<12){
+        $(".c1").fadeIn();
+        }else{
+            $(".c1").fadeOut();
+        }
+          if(h>12&&h<37){
+            $(".c2").fadeIn();
+        }else{
+            $(".c2").fadeOut();
+        }
+        if(h>37&&h<96){
+            $(".c3").fadeIn();
+        }else{
+            $(".c3").fadeOut();
+        }
+        if(h>50&&h<100.3){
+            $(".c4").fadeIn();
+        }else{
+            $(".c4").fadeOut();
+        }
+        if(h>60&&h<77){
+            $(".c5").fadeIn();
+        }else{
+            $(".c5").fadeOut();
+        }
+*/
+
+        
+        
+    }
+    
+
+function audioAutoPlay(id){
+    var audio = document.getElementById(id),
+        play = function(){
+        audio.play();
+        document.removeEventListener("touchstart",play, false);
+    };
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        play();
+    }, false);
+    document.addEventListener("touchstart",play, false);
+}
+audioAutoPlay('video1');
+</script> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
